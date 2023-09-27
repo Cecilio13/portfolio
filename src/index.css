@@ -1,135 +1,22 @@
+:root {
+  --background-color: #e27a7a;
+}
+/* @font-face {
+  font-family: Roboto;
+  src: url("./font/Roboto-Regular.ttf");
+} */
 html,
 body {
   all: unset;
+  font-size: 10px;
   min-height: 100vh;
 }
 body {
+  font-size: 1.6em;
   display: block;
+  /* font-family: "Roboto"; */
   font-family: "Roboto", sans-serif;
 }
 #root {
   min-height: 100vh;
-}
-.nav-header {
-  display: flex;
-  justify-content: flex-end;
-}
-.layout-main-root,
-.header-section,
-.about-me-section {
-  min-height: 100vh;
-  max-height: 100vh;
-}
-.section {
-  padding: 0px 10% 0px 10%;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* headers */
-.header-section {
-  background-color: #e27a7a;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.header-content {
-  display: flex;
-  flex-direction: row;
-  gap: 5%;
-}
-.header-text-intro,
-.header-text-job-title {
-  color: white;
-}
-.header-text-intro {
-  font-size: 1.7rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.header-text-name {
-  color: transparent;
-  -webkit-text-stroke: 2px white;
-  font-size: 4.5rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-}
-
-.header-texts {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-evenly; */
-  justify-content: center;
-}
-.header-text-job-title {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-}
-.header-avatar {
-  width: 50vh;
-  height: 50vh;
-  min-width: 50vh;
-  min-height: 50vh;
-  border-radius: 50%;
-
-  background-color: #c65d5d;
-}
-.header-text-btn-container {
-  margin-top: 3rem;
-}
-.header-text-btn {
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 100px;
-  font-size: 1rem;
-}
-.header-text-btn:hover {
-  background-color: white;
-  color: black;
-}
-@media screen and (max-width: 600px) {
-  .header-content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-text-intro {
-    font-size: 1rem;
-    text-align: center;
-  }
-  .header-text-name {
-    font-size: calc(1.5rem + 3.9vw);
-    text-align: center;
-  }
-  .header-avatar {
-    height: 250px;
-    width: 250px;
-    min-height: 250px;
-    min-width: 250px;
-    border-radius: 50%;
-    background-color: #c65d5d;
-  }
 }
