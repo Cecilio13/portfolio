@@ -1,22 +1,99 @@
 :root {
-  --background-color: #e27a7a;
+  --main-color: #e27a7a;
+  --darker-color: #ea6c6c;
+  --darkest-color: #c65d5d;
+  --text-color: white;
+  --padding: 8px;
+  --margin: 8px;
+  --section-side-margin: 10%;
 }
-/* @font-face {
-  font-family: Roboto;
-  src: url("./font/Roboto-Regular.ttf");
-} */
+
 html,
 body {
   all: unset;
-  font-size: 10px;
+  /* font-size: 10px; */
   min-height: 100vh;
 }
 body {
-  font-size: 1.6em;
+  /* font-size: 1.6em; */
   display: block;
   /* font-family: "Roboto"; */
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 #root {
   min-height: 100vh;
+}
+
+.section {
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px var(--section-side-margin);
+}
+.btn {
+  all: unset;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-csv {
+  border: 1px solid var(--text-color);
+  border-radius: 1.5rem;
+  color: var(--text-color);
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-color);
+}
+.section-header {
+  background-color: var(--main-color);
+}
+.header-img {
+  /* temp start */
+  background-color: var(--darker-color);
+  /* temp end */
+  min-height: 15vw;
+  min-width: 15vw;
+}
+/* --header-- fonts styles */
+.header-name {
+  font-size: clamp(2.032rem, 2.032rem + ((1vw - 0.2rem) * 2.896), 3.625rem);
+  /* font-size: clamp(2rem, 4rem, 4.5rem); */
+}
+.header-intro,
+.header-profession {
+  font-size: 2rem;
+}
+.header-name,
+.header-intro,
+.header-profession {
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+/* --header-- other styling */
+.header-intro {
+}
+.header-name {
+  line-height: 1.2;
+  stroke: var(--text-color);
+  -webkit-text-stroke-color: var(--text-color);
+  color: #ffffff00;
+  stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  letter-spacing: 3.2px;
+}
+
+.header-profession {
 }
